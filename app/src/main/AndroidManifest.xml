@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    package="io.scalaproject.mobileminerappdemo"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:targetApi="m">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".WizardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Welcome"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+    </application>
+
+</manifest>
